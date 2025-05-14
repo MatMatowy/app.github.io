@@ -2,28 +2,35 @@
 <html lang="pl">
 <head>
   <meta charset="UTF-8">
-
-  <!-- TU dodajesz meta tagi -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-  <title>Moja Strona</title>
+  <title>Moja strona jako web app</title>
+  <link rel="apple-touch-icon" href="ikona.png"> <!-- możesz usunąć jeśli nie masz ikonki -->
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: #111;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: sans-serif;
+    }
+  </style>
 </head>
 <body>
-  <!-- zawartość strony -->
+  <div>Witaj! Otwórz tę stronę z ekranu głównego, by zniknął pasek adresu.</div>
+
+  <script>
+    if (/iphone|ipad|ipod/i.test(navigator.userAgent) && !window.navigator.standalone) {
+        alert("Aby korzystać w pełnym ekranie, kliknij 'Udostępnij' i wybierz 'Dodaj do ekranu początkowego'.");
+    }
+  </script>
 </body>
 </html>
-    if(location.protocol == 'http:') location.protocol = 'https:';
-    if('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
-        .then(reg => console.log('Service Worker registered', reg))
-        .catch(err => console.error('Service Worker **not** registered', err));
-    }
-    else {
-      console.warn('Service Worker not supported in this browser');
-    }    
-  </script>
 
     <script src="./mObywatel 2.0_files/sw.js.pobrane"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
