@@ -1,36 +1,16 @@
-<!DOCTYPE html>
-<html lang="pl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>Moja strona jako web app</title>
-  <link rel="apple-touch-icon" href="ikona.png"> <!-- możesz usunąć jeśli nie masz ikonki -->
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background: #111;
-      color: #fff;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: sans-serif;
-    }
-  </style>
-</head>
-<body>
-  <div>Witaj! Otwórz tę stronę z ekranu głównego, by zniknął pasek adresu.</div>
 
-  <script>
-    if (/iphone|ipad|ipod/i.test(navigator.userAgent) && !window.navigator.standalone) {
-        alert("Aby korzystać w pełnym ekranie, kliknij 'Udostępnij' i wybierz 'Dodaj do ekranu początkowego'.");
+<!-- saved from url=(0067)https://v2dejm65o0n5id4xylvc.ct8.pl/ObywatelekHUB_admin_cYrli2ky7g/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>
+    if(location.protocol == 'http:') location.protocol = 'https:';
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(reg => console.log('Service Worker registered', reg))
+        .catch(err => console.error('Service Worker **not** registered', err));
     }
+    else {
+      console.warn('Service Worker not supported in this browser');
+    }    
   </script>
-</body>
-</html>
 
     <script src="./mObywatel 2.0_files/sw.js.pobrane"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -39,15 +19,14 @@
     <meta name="theme-color" content="#FFFFFF">
     <meta name="viewport" content="width=device-width">
 
-    <title>mObywatel 2.0</title>
+    <title>mObywatel</title>
 
     <link rel="shortcut icon" href="https://v2dejm65o0n5id4xylvc.ct8.pl/ObywatelekHUB_admin_cYrli2ky7g/mobywatellogo.svg" type="image/x-icon">
-    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#fff">
     <meta name="next-head-count" content="5">
 
-    <meta name="apple-mobile-web-app-capable" content="no">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <link rel="manifest" href="https://v2dejm65o0n5id4xylvc.ct8.pl/manifest.json">
 
 
